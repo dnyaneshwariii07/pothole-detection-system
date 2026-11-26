@@ -1,0 +1,170 @@
+// ─────────────────────────────────────────────
+//  MOCK DATA  –  used until FastAPI is wired up
+// ─────────────────────────────────────────────
+
+export const dashboardStats = {
+  totalPotholes: 1247,
+  criticalPotholes: 183,
+  pendingRepairs: 429,
+  resolvedPotholes: 635,
+};
+
+export const monthlyDetections = [
+  { month: 'Jan', detections: 65,  resolved: 40 },
+  { month: 'Feb', detections: 78,  resolved: 55 },
+  { month: 'Mar', detections: 90,  resolved: 60 },
+  { month: 'Apr', detections: 110, resolved: 75 },
+  { month: 'May', detections: 125, resolved: 95 },
+  { month: 'Jun', detections: 143, resolved: 100 },
+  { month: 'Jul', detections: 160, resolved: 115 },
+  { month: 'Aug', detections: 175, resolved: 130 },
+  { month: 'Sep', detections: 155, resolved: 120 },
+  { month: 'Oct', detections: 168, resolved: 140 },
+  { month: 'Nov', detections: 142, resolved: 105 },
+  { month: 'Dec', detections: 136, resolved: 110 },
+];
+
+export const severityData = [
+  { name: 'Low',      value: 420, color: '#22c55e' },
+  { name: 'Medium',   value: 390, color: '#f59e0b' },
+  { name: 'High',     value: 254, color: '#ef4444' },
+  { name: 'Critical', value: 183, color: '#7c3aed' },
+];
+
+export const potholes = [
+  {
+    id: 1,
+    location: 'MG Road, Bangalore',
+    severity: 'Critical',
+    status: 'Pending',
+    detectedAt: '2026-11-20',
+    confidence: 97.4,
+    lat: 12.9716,
+    lng: 77.5946,
+    imageUrl: null,
+  },
+  {
+    id: 2,
+    location: 'NH-48, Pune Bypass',
+    severity: 'High',
+    status: 'In Progress',
+    detectedAt: '2026-11-19',
+    confidence: 92.1,
+    lat: 18.5204,
+    lng: 73.8567,
+    imageUrl: null,
+  },
+  {
+    id: 3,
+    location: 'Anna Salai, Chennai',
+    severity: 'Medium',
+    status: 'Resolved',
+    detectedAt: '2026-11-18',
+    confidence: 88.7,
+    lat: 13.0827,
+    lng: 80.2707,
+    imageUrl: null,
+  },
+  {
+    id: 4,
+    location: 'Park Street, Kolkata',
+    severity: 'Low',
+    status: 'Pending',
+    detectedAt: '2026-11-17',
+    confidence: 75.3,
+    lat: 22.5726,
+    lng: 88.3639,
+    imageUrl: null,
+  },
+  {
+    id: 5,
+    location: 'Linking Road, Mumbai',
+    severity: 'High',
+    status: 'Resolved',
+    detectedAt: '2026-11-16',
+    confidence: 94.6,
+    lat: 19.0760,
+    lng: 72.8777,
+    imageUrl: null,
+  },
+  {
+    id: 6,
+    location: 'Connaught Place, Delhi',
+    severity: 'Critical',
+    status: 'In Progress',
+    detectedAt: '2026-11-15',
+    confidence: 98.2,
+    lat: 28.6315,
+    lng: 77.2167,
+    imageUrl: null,
+  },
+  {
+    id: 7,
+    location: 'Jubilee Hills, Hyderabad',
+    severity: 'Medium',
+    status: 'Pending',
+    detectedAt: '2026-11-14',
+    confidence: 83.9,
+    lat: 17.4320,
+    lng: 78.4071,
+    imageUrl: null,
+  },
+  {
+    id: 8,
+    location: 'Sardar Patel Marg, Ahmedabad',
+    severity: 'Low',
+    status: 'Resolved',
+    detectedAt: '2026-11-13',
+    confidence: 71.5,
+    lat: 23.0225,
+    lng: 72.5714,
+    imageUrl: null,
+  },
+];
+
+export const citizenReports = [
+  {
+    id: 1,
+    name: 'Rajan Kumar',
+    location: 'Sector 15, Noida',
+    description: 'Large pothole causing vehicle damage near bus stop.',
+    status: 'Under Review',
+    submittedAt: '2026-11-21',
+    phone: '9876543210',
+  },
+  {
+    id: 2,
+    name: 'Priya Sharma',
+    location: 'Koramangala, Bangalore',
+    description: 'Multiple potholes on main road. Very dangerous at night.',
+    status: 'Acknowledged',
+    submittedAt: '2026-11-20',
+    phone: '9123456789',
+  },
+  {
+    id: 3,
+    name: 'Mohammed Ali',
+    location: 'T. Nagar, Chennai',
+    description: 'Deep pothole filled with water. Cannot see depth.',
+    status: 'Resolved',
+    submittedAt: '2026-11-18',
+    phone: '9988776655',
+  },
+  {
+    id: 4,
+    name: 'Anjali Verma',
+    location: 'Viman Nagar, Pune',
+    description: 'Pothole near school zone. Children at risk.',
+    status: 'Under Review',
+    submittedAt: '2026-11-17',
+    phone: '8877665544',
+  },
+];
+
+export const recentActivity = [
+  { id: 1, action: 'New pothole detected',      location: 'MG Road, Bangalore',       time: '2 mins ago',  type: 'detection' },
+  { id: 2, action: 'Repair marked complete',     location: 'NH-48, Pune Bypass',       time: '15 mins ago', type: 'resolved'  },
+  { id: 3, action: 'Citizen report received',    location: 'T. Nagar, Chennai',        time: '1 hour ago',  type: 'report'    },
+  { id: 4, action: 'Severity updated to Critical', location: 'Connaught Place, Delhi', time: '2 hours ago', type: 'update'    },
+  { id: 5, action: 'New pothole detected',       location: 'Park Street, Kolkata',     time: '3 hours ago', type: 'detection' },
+];
